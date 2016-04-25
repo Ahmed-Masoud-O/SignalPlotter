@@ -1,0 +1,7 @@
+function plotsin (a , frq , t1 , t2 , stp , shift , choice)
+figure;
+T = t1:stp:t2;
+X = a*sin(2*pi*frq*T+shift);
+plot (T,X,'r');
+grid on;
+end

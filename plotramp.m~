@@ -1,0 +1,7 @@
+function plotramp (slope , t1 , t2 , stp , shift)
+figure;
+T = t1:stp:t2;
+X = slope*T+shift;
+plot (T,X,'r');
+grid on;
+end

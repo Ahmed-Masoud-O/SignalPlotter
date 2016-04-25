@@ -1,0 +1,9 @@
+function [t,x] = plotuistpconc (a , start , stp)
+
+b = start - 100;
+%c = start + 100;
+
+
+t = Inf:stp:Inf;
+x = a*heaviside(t-start);%-start is shift
+end
